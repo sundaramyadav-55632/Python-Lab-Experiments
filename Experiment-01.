@@ -1,0 +1,49 @@
+Aim:- To Demonstrate Various Data types & Operators in Python 
+
+Algorithm:-
+
+Step:1.	Start
+Step:2. Initialize values for monthly income, rent, groceries, utilities, and luxury item cost.
+Step:3. Calculate total expenses using total_expenses = rent + groceries + utilities.
+Step:4.	Calculate monthly savings usingsavings = monthly_income − total_expenses.
+Step:5.	Calculate annual savings and daily budget.
+Step:6.	Calculate number of luxury items that can be bought and the remaining money.
+Step:7.	Display total expenses, savings, annual savings, daily budget, number of luxury items, and leftover cash.
+Step:8.	Stop.
+
+Code:- #DATA TYPES AND OPERATORS 
+monthly_income = 5000
+
+rent = 1500
+groceries = 600
+utilities = 300
+luxury_item_cost = 450
+
+total_expenses = rent + groceries + utilities
+
+savings = monthly_income - total_expenses
+
+print("Total expenses: $", total_expenses)
+print("Monthly savings: $", savings)
+
+annual_savings = savings * 12
+
+daily_budget = monthly_income / 30
+
+print("Predicted annual savings: $", annual_savings)
+print("Average daily budget: $", daily_budget)
+
+num_items = savings 
+leftover_cash = savings % luxury_item_cost
+
+print("You can buy luxury items:", num_items)
+print("Leftover pocket money after purchase: $", leftover_cash)
+
+
+OUTPUT:-
+Total expenses: $ 2400
+Monthly savings: $ 2600
+Predicted annual savings: $ 31200
+Average daily budget: $ 166.66666666666666
+You can buy luxury items: 2600
+Leftover pocket money after purchase: $ 350
