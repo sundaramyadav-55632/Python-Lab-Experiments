@@ -1,0 +1,57 @@
+AIM:-Write a program to implement various types of visualisation in python.
+
+
+ALGORITHM
+Step 1: Import pandas, matplotlib, seaborn
+Step 2: Create or load dataset
+Step 3: Use line plot for trend
+Step 4: Use bar chart for comparison
+Step 5: Use histogram for distribution
+Step 6: Use scatter plot for relationship
+Step 7: Use box plot for statistical summary
+Step 8: Display all graphs using plt.show()
+Step 9: Stop
+
+
+CODE
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = {
+    "Name": ["Tanya", "Shivani", "Sundaram", "Sajan", "Yash"],
+    "Marks": [85, 90, 78, 88, 92],
+    "Age": [20, 21, 19, 20, 22]
+}
+
+# Converting to DataFrame
+df = pd.DataFrame(data)
+
+plt.figure()
+plt.plot(df["Name"], df["Marks"], marker='o')
+plt.title("Report of Students")
+plt.xlabel("Name")
+plt.ylabel("Marks")
+plt.show()
+
+plt.figure()
+plt.bar(df["Name"], df["Marks"])
+plt.title("Student's Marks")
+plt.show()
+
+plt.figure()
+plt.hist(df["Marks"], bins=5)
+plt.title("Marks Distribution")
+plt.show()
+
+plt.figure()
+plt.scatter(df["Age"], df["Marks"])
+plt.title("Age vs Marks")
+plt.xlabel("Age")
+plt.ylabel("Marks")
+plt.show()
+
+plt.figure()
+sns.boxplot(y=df["Marks"])
+plt.title("Marksheet")
+plt.show()
